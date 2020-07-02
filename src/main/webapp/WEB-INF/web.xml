@@ -11,13 +11,13 @@
 	</listener>
 	
 	<servlet>
-		<servlet-name>VerServlet</servlet-name>
-		<servlet-class>VerServlet</servlet-class>
+		<servlet-name>UserServlet</servlet-name>
+		<servlet-class>UserServlet</servlet-class>
 	</servlet>
 	
 	<servlet-mapping>
-		<servlet-name>VerServlet</servlet-name>
-		<url-pattern>/cdi_deber1/VerServlet</url-pattern>
+		<servlet-name>UserServlet</servlet-name>
+		<url-pattern>/cdi_deber1/UserServlet</url-pattern>
 	</servlet-mapping>
 	
 	

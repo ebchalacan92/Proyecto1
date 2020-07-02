@@ -26,7 +26,7 @@ public class UserServlet extends HttpServlet {
 	@Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
-		response.setContentType("text/html");  
+		/*response.setContentType("text/html");  
         PrintWriter out=response.getWriter();  
         out.println("<h1>Añadir un nuevo usuario</h1>");  
         
@@ -43,7 +43,7 @@ public class UserServlet extends HttpServlet {
         out.print("<a href='VerServlet'>Ver Usuarios</a>");
         
           
-        out.close();  
+        out.close();  */
 	}
 
 		
@@ -70,7 +70,7 @@ public class UserServlet extends HttpServlet {
         int status=servicio.insertarUsuario(e);  
         if(status>0){  
             out.print("<p>Se ha almacenado con Exito!</p>");  
-            out.println("<a href='VerServlet'>Ver la lista de Usuarios</a>");   
+            req.getRequestDispatcher("index.html").include(req, resp);  
         }else{  
             out.println("Lo siento! No se pudo guardar los campos");  
         }  
