@@ -26,7 +26,7 @@ public class VerServlet extends HttpServlet {
 		
 		 response.setContentType("text/html");  
 	        PrintWriter out=response.getWriter();  
-	        out.println("<a href='index.html'>Añadir un nuevo Usuario</a>");  
+	        out.println("<a href='index.html'>Crear nuevo Usuario</a>");  
 	        out.println("<h1>LISTA DE USUARIOS</h1>");  
 	          
 	        List<Usuario> list=servicio.selectAllUsers();  
