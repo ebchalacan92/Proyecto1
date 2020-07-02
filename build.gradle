@@ -21,6 +21,7 @@ dependencies {
 	
 	compile group: 'org.apache.commons', name: 'commons-dbcp2', version: '2.7.0'
 	
-
+	task stage(dependsOn: ['build', 'clean'])
+	build.mustRunAfter clean
   
 }
