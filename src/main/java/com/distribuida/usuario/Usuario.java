@@ -28,6 +28,8 @@ public class Usuario {
 		this.direccion = direccion;
 		this.email = email;
 	}
+	
+	
 
 
 
